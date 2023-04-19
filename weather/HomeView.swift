@@ -9,23 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        ZStack {
-            Image("Background")
-                .resizable()
-                .ignoresSafeArea()
+        NavigationView {
+            ZStack {
+                Image("Background")
+                    .resizable()
+                    .ignoresSafeArea()
 
-            VStack(alignment: .center){
-                Text("Seoul").font(.largeTitle)
                 VStack(alignment: .center){
-                    Text(attributedString)
-                    Text("H:27° L:10°").font(.title3.weight(.bold))
-                }
-                Spacer()
-            }.padding(.top,50)
-        }
+                    Text("Seoul").font(.largeTitle)
+                    VStack(alignment: .center){
+                        Text(attributedString)
+                        Text("H:27°   L:10°").font(.title3.weight(.semibold))
+                    }
+                    Spacer()
+                }.padding(.top,50)
+                TabBar(action: {})
+            }
+        }.navigationBarHidden(true)
     }
     private var attributedString: AttributedString{
-        var string = AttributedString("25°" + "\n"+"Mostly Clear")
+        var string = AttributedString("  25°" + "\n" + "   Mostly Clear")
         if let temp = string.range(of: "25°"){
             string[temp].font = .system(size: 96,weight: .thin)
             string[temp].foregroundColor = .primary
