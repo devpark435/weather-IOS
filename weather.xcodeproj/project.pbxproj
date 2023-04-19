@@ -53,11 +53,11 @@
 		B543DCF029EEAA0700E0286C /* weather */ = {
 			isa = PBXGroup;
 			children = (
-				B543DCF129EEAA0700E0286C /* weatherApp.swift */,
+				B543DCFF29EFA44F00E0286C /* HomeView.swift */,
 				B543DCF329EEAA0700E0286C /* ContentView.swift */,
+				B543DCF129EEAA0700E0286C /* weatherApp.swift */,
 				B543DCF529EEAA0700E0286C /* Assets.xcassets */,
 				B543DCF729EEAA0700E0286C /* Preview Content */,
-				B543DCFF29EFA44F00E0286C /* HomeView.swift */,
 			);
 			path = weather;
 			sourceTree = "<group>";
