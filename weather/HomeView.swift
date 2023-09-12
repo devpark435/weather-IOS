@@ -16,14 +16,16 @@ struct HomeView: View {
                     .ignoresSafeArea()
 
                 VStack(alignment: .center){
-                    Text("Seoul").font(.largeTitle)
+                    Text("Seoul").font(.headline)
                     VStack(alignment: .center){
                         Text(attributedString)
                         Text("H:27°   L:10°").font(.title3.weight(.semibold))
                     }
                     Spacer()
                 }.padding(.top,50)
-                TabBar(action: {})
+                TabBar(action: {
+                    
+                })
             }
         }.navigationBarHidden(true)
     }

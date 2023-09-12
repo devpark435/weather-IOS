@@ -24,7 +24,7 @@ struct TabBar: View {
                 Button{
                     action()
                 }label: {
-                    Image(systemName: "mappin.and.ellipse")
+                    Image(systemName: "location")
                         .frame(width: 44,height: 44)
                 }
                 Spacer()
